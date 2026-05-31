@@ -1,0 +1,11 @@
+[package]
+name = "project"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "=0.8.9"
+hyper = {version = "1.10.1", features = ["full"]}
+sea-orm = {version = "1.1.20", features = [ "sqlx-mysql", "runtime-async-std-native-tls", "macros" ]}
+serde = {version = "1.0.228", features = ["derive"]}
+tokio = { version = "1.52.3", features = ["full"]}
